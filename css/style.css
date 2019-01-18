@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  background-image: url(../img/background-small.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+@media screen and (min-width: 64em) {
+  body {
+    background-image: url(../img/background.jpg);
+    font-size: 20px;
+  }
+}
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+header #header-bar {
+  margin: 0;
+  width: 100%;
+  height: 60px;
+  padding: 0px 30px;
+  background-color: #212121;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (min-width: 64em) {
+  header #header-bar {
+    justify-content: space-around;
+  }
+}
+header #header-bar img {
+  width: 50px;
+  display: block;
+}
+header #header-bar .nav-toggle {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid transparent;
+}
+header #header-bar .nav-toggle:focus {
+  outline-width: 0;
+}
+header #header-bar .nav-toggle [class*='bar-'] {
+  background: #fafafa;
+  display: block;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+  border-radius: 4px;
+  height: 4px;
+  width: 50px;
+  margin-bottom: 8px;
+}
+header #header-bar .nav-toggle .bar-bot {
+  margin-bottom: 0;
+}
+header #header-bar .nav-toggle.opened .bar-top {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: 15% 15%;
+  transform-origin: 15% 15%;
+}
+header #header-bar .nav-toggle.opened .bar-mid {
+  opacity: 0;
+}
+header #header-bar .nav-toggle.opened .bar-bot {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 15% 95%;
+  transform-origin: 15% 95%;
+}
+@media screen and (min-width: 64em) {
+  header #header-bar .nav-toggle {
+    display: none;
+  }
+}
+header .menu-normal {
+  display: none;
+  background-color: rgba(66, 66, 66, 0.6);
+}
+header .menu-normal ul {
+  margin: 0;
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+}
+header .menu-normal ul li {
+  display: inline-block;
+}
+header .menu-normal ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 0 10px;
+}
+header .menu-normal ul li a:hover {
+  color: #00e4ff;
+}
+@media screen and (min-width: 64em) {
+  header .menu-normal {
+    display: block;
+  }
+}
+main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+main .menu-burger {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: none;
+  background-color: black;
+}
+main .menu-burger #flex {
+  width: 55%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(66, 66, 66, 0.3);
+  border-left: #00e4ff solid 5px;
+  border-right: #00e4ff solid 5px;
+}
+main .menu-burger #flex #menu {
+  padding: 0;
+  margin: 0;
+}
+main .menu-burger #flex #menu li {
+  margin: 10px 0;
+  list-style-type: none;
+  text-align: center;
+}
+main .menu-burger #flex #menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 150%;
+}
+@media screen and (min-width: 64em) {
+  main .menu-burger #flex {
+    display: none;
+  }
+}
+main #index {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+main #index #blabla,
+main #index #devweb {
+  text-transform: uppercase;
+}
+@media screen and (min-width: 64em) {
+  main #index #blabla,
+  main #index #devweb {
+    font-size: 30px;
+  }
+}
+main #index #cheritier {
+  display: block;
+  padding: 10px 20px;
+  font-size: 30px;
+  text-transform: uppercase;
+  border: solid white 4px;
+  border-radius: 5px;
+}
+@media screen and (min-width: 64em) {
+  main #index #cheritier {
+    font-size: 60px;
+  }
+}
+main #about,
+main #skills,
+main #contact {
+  min-height: 100%;
+  width: 100%;
+  padding: 15% 10%;
+}
+@media screen and (min-width: 64em) {
+  main #about,
+  main #skills,
+  main #contact {
+    padding: 7% 10%;
+  }
+}
+main #about h2,
+main #skills h2,
+main #contact h2 {
+  text-align: center;
+}
+main #about {
+  background-color: #fafafa;
+}
+main #about #photo img {
+  margin: auto;
+  display: block;
+  width: 250px;
+  border: solid black 4px;
+  border-radius: 125px;
+  box-shadow: grey 10px 10px 10px;
+}
+main #skills {
+  background-color: #e0e0e0;
+}
+main #skills h3 {
+  text-align: center;
+}
+main #skills .progressbar {
+  width: 80%;
+  margin: auto;
+  padding: 1px 0;
+  height: 40px;
+  margin-bottom: 10px;
+}
+main #skills .progressbar img {
+  float: left;
+  margin: 2px 5px 2px 2px;
+}
+main #skills .progressbar .bar {
+  margin: 5px 0;
+  height: 30px;
+  border: solid 2px black;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: white;
+}
+main #skills .progressbar .bar .progress {
+  width: 0%;
+  height: 100%;
+  padding: 0px;
+  background-color: #00e4ff;
+  transition: width 2s;
+}
+main #skills .progressbar .bar .progress.html {
+  transition-delay: 0s;
+}
+main #skills .progressbar .bar .progress.css {
+  transition-delay: 0.5s;
+}
+main #skills .progressbar .bar .progress.js {
+  transition-delay: 1s;
+}
+main #skills .progressbar .bar .progress.jquery {
+  transition-delay: 1.5s;
+}
+main #skills .progressbar .bar .progress.php {
+  transition-delay: 2s;
+}
+main #skills .progressbar .bar .progress.bootsrap {
+  transition-delay: 2.5s;
+}
+main #skills .progressbar .bar .visible.html {
+  width: 85%;
+}
+main #skills .progressbar .bar .visible.css {
+  width: 80%;
+}
+main #skills .progressbar .bar .visible.js {
+  width: 30%;
+}
+main #skills .progressbar .bar .visible.jquery {
+  width: 20%;
+}
+main #skills .progressbar .bar .visible.php {
+  width: 5%;
+}
+main #skills .progressbar .bar .visible.bootsrap {
+  width: 10%;
+}
+main #skills .software,
+main #skills .other {
+  margin: auto;
+}
+main #skills .software img,
+main #skills .other img {
+  float: left;
+}
+main #skills .software p,
+main #skills .other p {
+  margin-left: 50px;
+  height: 36px;
+  line-height: 36px;
+}
+main #contact {
+  color: white;
+}
+main #contact #text {
+  text-align: center;
+  font-size: 14px;
+}
+main #contact #text h3 {
+  font-size: 18px;
+}
+main #contact #text p {
+  text-align: center;
+}
+main #contact #text h4 {
+  display: inline-block;
+  margin: 0 2px;
+}
+main #contact #text a {
+  text-decoration: none;
+  color: #00e4ff;
+  font-weight: bold;
+}
+main #contact form fieldset {
+  width: 100%;
+  display: block;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+main #contact form input,
+main #contact form textarea {
+  font-weight: bold;
+  display: block;
+  height: auto;
+  width: 85%;
+  margin: auto;
+  margin-top: 20px;
+  padding: 8px 4px 8px 15px;
+  color: #222020;
+  border: 3px solid rgba(236, 240, 241, 0.3);
+  border-radius: 6px;
+  outline: 0;
+  transition: border 0.5s, background-color 0.5s, width 0.5s;
+}
+main #contact form input:focus,
+main #contact form textarea:focus {
+  background: #ecf0f1;
+  border: 3px solid #00e4ff;
+  width: 90%;
+}
+main #contact form input {
+  font-weight: bold;
+  display: block;
+  height: auto;
+  width: 85%;
+  margin: auto;
+  margin-top: 20px;
+  padding: 8px 4px 8px 15px;
+  color: #222020;
+  border: 3px solid rgba(236, 240, 241, 0.3);
+  border-radius: 6px;
+  outline: 0;
+}
+main #contact form input.submit {
+  width: 50%;
+}
+main #contact form #rgpd-box {
+  width: fit-content;
+  margin: auto;
+  margin-top: 10px;
+  height: 40px;
+  line-height: 40px;
+}
+main #contact form #rgpd-box #rgpd {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  float: left;
+}
+main footer {
+  margin: 0;
+  padding-top: 15px;
+  position: relative;
+  background: black;
+  color: white;
+  font-family: 'Poppins';
+  text-align: center;
+}
+main footer a {
+  color: #00e4ff;
+  text-decoration: none;
+}
+main footer h3 {
+  margin: 0;
+}
