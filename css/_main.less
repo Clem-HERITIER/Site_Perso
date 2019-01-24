@@ -276,7 +276,6 @@ main
 
     #about
     {
-        // margin: 20px;
         background-color: @aboutBackgroung;
 
         #photo img
@@ -287,6 +286,42 @@ main
             border: solid black 4px;
             border-radius: 125px; 
             box-shadow: grey 10px 10px 10px;
+        }
+
+        #text
+        {
+            margin-bottom: 40px;
+        }
+
+        .button 
+        {
+            display: block;
+            // margin: auto;
+            // border: 1px black solid;
+            // border-radius: 5px;
+            text-align: center;
+            // padding: 0;
+
+
+            a
+            {
+                display: inline-block;
+                width: fit-content;
+                padding: 10px;
+                font-weight: 400;
+                text-decoration: none;
+                color: @color1;
+                border: 2px black solid;
+                border-radius: 5px;
+                background-color: rgb(230, 230, 230);
+
+                &:hover
+                {
+                    background-color: grey;
+                    color: white;
+                    box-shadow: 0 0 10px grey;
+                }
+            }
         }
     }
 
@@ -396,23 +431,41 @@ main
                 }
             }
         }  
-        
-        .software, .other
-        {
-            margin: auto;
 
-            img 
+        #container-flex
+        {
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            .block
             {
-                float: left;
+
+                h3 
+                {
+                    margin-top: 0;
+                }
             }
 
-            p 
+            .software, .other
             {
-                margin-left: 50px;
-                height: 36px;
-                line-height: 36px;
+                margin: auto;
+    
+                img 
+                {
+                    float: left;
+                }
+    
+                p 
+                {
+                    margin-left: 50px;
+                    height: 36px;
+                    line-height: 36px;
+                }
             }
         }
+        
     }
 
     #contact
@@ -501,6 +554,24 @@ main
                 &.submit
                 {
                     width: 50%;
+                }
+
+                &#name
+                {
+                    background-image: url('../img/name.svg');
+                    background-size: 28px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-position: left;
+                    padding-left: 38px;
+                }
+
+                &#mail
+                {
+                    background-image: url('../img/mail.svg');
+                    background-size: 45px;
+                    background-repeat: no-repeat;
+                    padding-left: 38px;
                 }
             }
 

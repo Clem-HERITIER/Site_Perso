@@ -112,7 +112,7 @@ header .menu-normal ul li a {
   padding: 0 10px;
 }
 header .menu-normal ul li a:hover {
-  color: #00e4ff;
+  color: #c40d00;
 }
 @media screen and (min-width: 64em) {
   header .menu-normal {
@@ -141,8 +141,8 @@ main .menu-burger #flex {
   align-items: center;
   justify-content: space-around;
   background-color: rgba(66, 66, 66, 0.3);
-  border-left: #00e4ff solid 5px;
-  border-right: #00e4ff solid 5px;
+  border-left: #c40d00 solid 5px;
+  border-right: #c40d00 solid 5px;
 }
 main .menu-burger #flex #menu {
   padding: 0;
@@ -225,6 +225,29 @@ main #about #photo img {
   border-radius: 125px;
   box-shadow: grey 10px 10px 10px;
 }
+main #about #text {
+  margin-bottom: 40px;
+}
+main #about .button {
+  display: block;
+  text-align: center;
+}
+main #about .button a {
+  display: inline-block;
+  width: fit-content;
+  padding: 10px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #c40d00;
+  border: 2px black solid;
+  border-radius: 5px;
+  background-color: #e6e6e6;
+}
+main #about .button a:hover {
+  background-color: grey;
+  color: white;
+  box-shadow: 0 0 10px grey;
+}
 main #skills {
   background-color: #e0e0e0;
 }
@@ -254,7 +277,7 @@ main #skills .progressbar .bar .progress {
   width: 0%;
   height: 100%;
   padding: 0px;
-  background-color: #00e4ff;
+  background-color: #c40d00;
   transition: width 2s;
 }
 main #skills .progressbar .bar .progress.html {
@@ -293,16 +316,24 @@ main #skills .progressbar .bar .visible.php {
 main #skills .progressbar .bar .visible.bootsrap {
   width: 10%;
 }
-main #skills .software,
-main #skills .other {
+main #skills #container-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+main #skills #container-flex .block h3 {
+  margin-top: 0;
+}
+main #skills #container-flex .software,
+main #skills #container-flex .other {
   margin: auto;
 }
-main #skills .software img,
-main #skills .other img {
+main #skills #container-flex .software img,
+main #skills #container-flex .other img {
   float: left;
 }
-main #skills .software p,
-main #skills .other p {
+main #skills #container-flex .software p,
+main #skills #container-flex .other p {
   margin-left: 50px;
   height: 36px;
   line-height: 36px;
@@ -326,7 +357,7 @@ main #contact #text h4 {
 }
 main #contact #text a {
   text-decoration: none;
-  color: #00e4ff;
+  color: #c40d00;
   font-weight: bold;
 }
 main #contact form fieldset {
@@ -354,7 +385,7 @@ main #contact form textarea {
 main #contact form input:focus,
 main #contact form textarea:focus {
   background: #ecf0f1;
-  border: 3px solid #00e4ff;
+  border: 3px solid #c40d00;
   width: 90%;
 }
 main #contact form input {
@@ -372,6 +403,20 @@ main #contact form input {
 }
 main #contact form input.submit {
   width: 50%;
+}
+main #contact form input#name {
+  background-image: url('../img/name.svg');
+  background-size: 28px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: left;
+  padding-left: 38px;
+}
+main #contact form input#mail {
+  background-image: url('../img/mail.svg');
+  background-size: 45px;
+  background-repeat: no-repeat;
+  padding-left: 38px;
 }
 main #contact form #rgpd-box {
   width: fit-content;
@@ -396,7 +441,7 @@ main footer {
   text-align: center;
 }
 main footer a {
-  color: #00e4ff;
+  color: #c40d00;
   text-decoration: none;
 }
 main footer h3 {
