@@ -313,9 +313,6 @@ main #skills .progressbar .bar .visible.jquery {
 main #skills .progressbar .bar .visible.php {
   width: 5%;
 }
-main #skills .progressbar .bar .visible.bootsrap {
-  width: 10%;
-}
 main #skills #container-flex {
   display: flex;
   flex-wrap: wrap;
