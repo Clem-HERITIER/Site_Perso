@@ -201,13 +201,35 @@
 						<input id="sujet" type="text" name="subject" placeholder="Sujet">
 						<textarea id="message" name="user-message" cols="30" rows="10" placeholder="Laissez moi un message..." onblur="verifMessage(this)"></textarea>
 						<div id="rgpd-box">
-							<input type="checkbox" name="rgpd" id="rgpd">
-							J'ai lu et accepté notre <a href="">politique de confidentialité des données</a>
+							<input type="checkbox" name="rgpd" id="rgpd-check">
+							J'ai lu et accepté notre <a class="show-rgpd" href="#rgpd-content">politique de confidentialité des données</a>
 						</div>
 						<input class="submit" name="submit" type="submit" value="Envoyer">
 						<p id="result"></p>
 					</fieldset>
 				</form>
+			</div>
+		</section>
+		<section id="rgpd-content" class="rgpd-content">
+			<img src="img/closeSlideShow.png" id="close-rgpd">
+			<div> 
+				<p>
+					Nous nous engageons à ce que la collecte et le traitement de vos données, effectués à partir du site www.clement-heritier.fr, soient conformes au règlement général sur la protection des données (RGPD) et à la loi Informatique et Libertés.
+				</p>
+				<p>
+					Chaque formulaire ou téléservice limite la collecte des données personnelles au strict nécessaire (minimisation des données).
+				</p>
+				<p>	
+					Les informations recueillies via le formulaire de contact sont seulement et strictement utilisées par son administrateur. Elles ne sont en aucun cas revendues à des tiers, ni sauvegardées en base de données. Les données sont reçues par mail et peuvent etre stockées sur notre serveur et logiciel mail.
+				</p>	
+				<p>
+					Pour toute information ou exercice de vos droits Informatique et Libertés sur les traitements de données personnelles gérés par ce site, merci de nous contacter :
+				</p>
+				<p>
+					via le formulaire de contact
+					par courrier à l’adresse Clément Héritier, 16 rue Montpela Bujadoux 63000 Clermont-Ferrand
+					par télépone au 06 98 87 12 90
+				</p>
 			</div>
 		</section>
 		<footer>

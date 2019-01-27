@@ -556,23 +556,23 @@ main
                     width: 50%;
                 }
 
-                &#name
-                {
-                    background-image: url('../img/name.svg');
-                    background-size: 28px;
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-position: left;
-                    padding-left: 38px;
-                }
+                // &#name
+                // {
+                //     background-image: url('../img/name.svg');
+                //     background-size: 28px;
+                //     background-repeat: no-repeat;
+                //     background-position: center;
+                //     background-position: left;
+                //     padding-left: 38px;
+                // }
 
-                &#mail
-                {
-                    background-image: url('../img/mail.svg');
-                    background-size: 45px;
-                    background-repeat: no-repeat;
-                    padding-left: 38px;
-                }
+                // &#mail
+                // {
+                //     background-image: url('../img/mail.svg');
+                //     background-size: 45px;
+                //     background-repeat: no-repeat;
+                //     padding-left: 38px;
+                // }
             }
 
             #rgpd-box
@@ -580,17 +580,50 @@ main
                 width: fit-content;
                 margin: auto;
                 margin-top: 10px;
-                height: 40px;
+                height: fit-content;
                 line-height: 40px;
 
-                #rgpd 
+                #rgpd-check
                 {
                     width: 20px;
                     height: 20px;
                     margin: 10px;
                     float: left;
                 }
+
+                a
+                {
+                    color: @color1;
+                }
             }
+        }
+    }
+
+    .rgpd-content
+    {
+        position: relative;
+        width: 70%;
+        height: 0px;
+        margin: auto;
+        padding: 10% 5%;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+        color: white;
+        overflow: hidden;
+        display: none;
+
+        &.visible
+        {
+            height: auto;
+            display: block;
+        }
+
+        #close-rgpd
+        {
+            position: absolute;
+            height: 36px; 
+            top: 5px;  
+            right: 5px;       
         }
     }
     

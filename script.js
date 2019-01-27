@@ -137,3 +137,16 @@ $('.submit').click(function(e)
     }
   }
 })
+
+// RGPD
+$('.show-rgpd').click(function()
+  {
+    $('.rgpd-content').toggleClass('visible');
+  }
+)
+
+$('#close-rgpd').click(function()
+  {
+    $('.rgpd-content').toggleClass('visible');
+  }
+)
