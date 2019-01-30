@@ -113,7 +113,7 @@ $('.submit').click(function(e)
     }
     else
     {
-      if (!$("#rgpd").is(':checked'))
+      if (!$("#rgpd-checkbox").is(':checked'))
       {
         $("#result").html("vous devez valider notre politique de confidentialité des données");
       }
